@@ -25,3 +25,12 @@ On Windows:
     cd .vim
     git submodule init
     git submodule update
+
+Plugins
+---
+To add plugins (e.g. NERDTree in this case:
+    cd ~/.vim
+    git submodule add git@github.com:scrooloose/nerdtree.git pack/plugins/start/nerdtree
+
+To update submodules (TBC)
+    git submodule update --remote
