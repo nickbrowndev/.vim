@@ -12,8 +12,9 @@ endif
 
 " Colours & Fonts {{{
 syntax enable			"enable syntax highlighting
-colorscheme desert      "colour scheme
+set background=dark     "dark colour mode
 set t_Co=256            "use 256 colors at the terminal
+colorscheme zenburn     "colour scheme
 set guifont=Fira_Code:h10,Consolas:h10,Courier\ New:h10
 "}}}
 
