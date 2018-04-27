@@ -9,7 +9,7 @@ On Linux and Mac:
 
     rm -rf .vim
     rm .vimrc
-    git clone git@github.com:maciakl/.vim.git
+    git clone git@github.com:nickbrowndev/vimrc.git
     ln -s .vim/.vimrc .vimrc
     cd .vim
     git submodule init
@@ -19,7 +19,7 @@ On Windows:
 
     rmdir /s /q vimfiles
     del _vimrc
-    git clone git@github.com:maciakl/.vim.git
+    git clone git@github.com:nickbrowndev/vimrc.git
     mklink /d vimfiles .vim
     mklink /h _vimrc .vim\.vimrc
     cd .vim

@@ -11,6 +11,7 @@ endif
 " }}} 
 
 " Colours & Fonts {{{
+set termguicolors       "enable truecolour support
 syntax enable			"enable syntax highlighting
 set background=dark     "dark colour mode
 set t_Co=256            "use 256 colors at the terminal
