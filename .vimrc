@@ -15,11 +15,12 @@ set termguicolors       "enable truecolour support
 syntax enable			"enable syntax highlighting
 set background=dark     "dark colour mode
 set t_Co=256            "use 256 colors at the terminal
-colorscheme zenburn     "colour scheme
+colorscheme iceberg     "colour scheme
 set guifont=Fira_Code:h10,Consolas:h10,Courier\ New:h10
 "}}}
 
 " Spaces & Tabs {{{
+set shiftwidth=4        "sets number of spaces used for < > indentation
 set tabstop=4			"number of visual spaces per TAB
 set softtabstop=4		"number of spaces in tab when editing
 set expandtab			"use spaces instead of tabs
@@ -54,6 +55,8 @@ set path+=**
 set ignorecase          "turn off case sensitivity
 set incsearch           "search as characters are entered
 set hlsearch            "highlight search matches
+set complete+=kspell    "Add dictionary to autocomplete when spelling enabled
+set nospell             "'set spell' sets the dictionary
 " }}}
  
 " Copy/Pasting {{{
@@ -73,6 +76,7 @@ set hlsearch            "highlight search matches
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
+inoremap jk <esc>        "Use 'jk' to return to Normal mode
 " }}}
 
 " Plugins {{{
