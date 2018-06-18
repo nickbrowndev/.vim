@@ -29,8 +29,14 @@ On Windows:
 Plugins
 ---
 To add plugins (e.g. NERDTree in this case:
-    cd ~/.vim
-    git submodule add git@github.com:scrooloose/nerdtree.git pack/plugins/start/nerdtree
+    
+cd ~/.vim
+    
+git submodule add git@github.com:scrooloose/nerdtree.git pack/plugins/start/nerdtree
+
 
 To update submodules (TBC)
-    git submodule update --remote
+    
+git submodule update --remote
+ --merge
+git commit 
