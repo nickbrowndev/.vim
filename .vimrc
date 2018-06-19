@@ -89,6 +89,16 @@ let NERDTreeShowHidden=1 "Show hidden files by default
 map <C-n> :NERDTreeToggle<CR>
 " }}}
 
+" NERDTree-Git {{{
+" }}}
+" 
+" Surround {{{
+" }}}
+"
+" CtrlP {{{
+:nnoremap <leader>p CtrlP
+" }}}
+"
 " }}}
 
 
