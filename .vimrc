@@ -96,7 +96,7 @@ map <C-n> :NERDTreeToggle<CR>
 " }}}
 "
 " CtrlP {{{
-:nnoremap <leader>p CtrlP
+nnoremap <leader>f :CtrlP<CR>
 " }}}
 "
 " }}}

@@ -1,0 +1,14 @@
+VIMRC Successful Locations
+
+			GVim	Git-Bash-Vim
+%userprofile%/.vim/
+.vimrc			N	    N	
+_vimrc			N	    N
+vimrc			N       Y
+%userprofile%/
+.vimrc			Y       Y
+_vimrc			Y       Y
+vimrc			N       N
+.gvimrc         Y
+_gvimrc         Y
+gvimrc          N
