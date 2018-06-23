@@ -10,3 +10,6 @@
 [submodule "pack/plugins/start/nerdtree-git"]
 	path = pack/plugins/start/nerdtree-git
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/plugins/start/fzf"]
+	path = pack/plugins/start/fzf
+	url = git@github.com:junegunn/fzf.git
