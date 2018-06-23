@@ -118,13 +118,11 @@ endfunction
 
 set statusline=
 set statusline+=%#Cursor#
-set statusline+=\ 
-set statusline+=%{mode()}           " Current Editor Mode
-set statusline+=\ 
+set statusline+=\ %{mode()}\        " Current Editor Mode
 set statusline+=%#PmenuSel#
 set statusline+=%{StatuslineGit()}  " Git branch
 set statusline+=%#LineNr#
-set statusline+=[%2n]                " Buffer Number
+set statusline+=\ [%2n]             " Buffer Number
 set statusline+=\ %f                " File
 set statusline+=%m\                 " File modified status 
 set statusline+=%=                  " Side separator
