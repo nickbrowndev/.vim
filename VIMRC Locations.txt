@@ -7,9 +7,14 @@ VIMRC Successful Locations
 _vimrc			N	    N		N
 vimrc			N       Y       Y
 %userprofile%/
-.vimrc			Y       Y
-_vimrc			Y       Y
-vimrc			N       N
+.vimrc			Y       Y       Y
+_vimrc			Y       Y       Y
+vimrc			N       N	    N
 .gvimrc         Y
 _gvimrc         Y
 gvimrc          N
+
+Plugins
+%userprofile%/.vim/             $HOME/.vim/
+pack/plugins/start/
+                                Y

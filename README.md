@@ -37,6 +37,5 @@ git submodule add git@github.com:scrooloose/nerdtree.git pack/plugins/start/nerd
 
 To update submodules (TBC)
     
-git submodule update --remote
- --merge
+git submodule update --remote --merge 
 git commit 
