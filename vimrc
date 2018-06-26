@@ -76,7 +76,7 @@ set nospell             "'set spell' sets the dictionary
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
-inoremap jk <esc>        "Use 'jk' to return to Normal mode
+inoremap jk <ESC>
 " }}}
 
 " Plugins {{{
