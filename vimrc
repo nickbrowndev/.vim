@@ -10,6 +10,11 @@ if has('win32') || has('win64')
 endif
 " }}} 
 
+" FIle Encodings {{{
+set fileencodings=utf-8,latin-1,cp1252
+set encoding=utf-8
+"}}}
+
 " Colours & Fonts {{{
 set termguicolors       "enable truecolour support
 syntax enable			"enable syntax highlighting
