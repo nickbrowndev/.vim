@@ -13,7 +13,7 @@ $(function() {
                 createField(command, 'ex');
             groupingSection += result;
           });
-         groupingSection += '</section>' + \r\n;
+         groupingSection += '</section>' + '\r\n';
          htmlText += groupingSection;
      });
     $('body').html(htmlText);
