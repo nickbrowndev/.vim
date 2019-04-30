@@ -1,0 +1,23 @@
+[{
+  title: 'Movement'
+  commands : [
+  {
+    description : 'Move to top of buffer',
+    normal : 'G'
+  },
+  {
+    description : 'Moveto bottom of buffer',
+    normal : 'gg'
+  }]
+},
+{
+  title: 'Modes'
+  commands: [
+  {
+    description: 'Insert text at cursor',
+    normal: 'i'
+  }]
+}
+]
+    
+    
