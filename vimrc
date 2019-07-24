@@ -102,6 +102,14 @@ map <C-n> :NERDTreeToggle<CR>
 "
 " CtrlP {{{
 nnoremap <leader>f :CtrlP<CR>
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+"if executable('ag')
+  "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"endif
+" Use Git to index files instead of searching
+if executable('git')
+let g:ctrlp_user_command = ['.git/', 'git ls-files --cached --others  --exclude-standard %s']
+endif
 " }}}
 "
 " }}}
@@ -113,12 +121,12 @@ nnoremap <leader>f :CtrlP<CR>
 " Status Line {{{
 set laststatus=2                    " Use statusline
 function! GitBranch()
-  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+    return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
 
 function! StatuslineGit()
-  let l:branchname = GitBranch()
-  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+    let l:branchname = GitBranch()
+    return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
 endfunction
 
 set statusline=
