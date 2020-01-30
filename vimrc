@@ -5,12 +5,19 @@
 
 " Basic Settings {{{
 set nocompatible 		"Turns of VI compatibility restrictions
+" Change runtimepath to find vim files (changes default on Windows to .vim)
 if has('win32') || has('win64')
-    set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+    set runtimepath^=~/.vim
+    set runtimepath+=~/.vim/after
+    set runtimepath-=~/vimfiles
+    set runtimepath-=~/vimfiles/after
 endif
 " }}} 
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swap//
+set undodir=~/.vim/.undo//  " Set directory for swapfiles (must exist!)
 
-" FIle Encodings {{{
+" File Encodings {{{
 set fileencodings=utf-8,latin-1,cp1252
 set encoding=utf-8
 "}}}
@@ -21,7 +28,7 @@ syntax enable			"enable syntax highlighting
 set background=dark     "dark colour mode
 set t_Co=256            "use 256 colors at the terminal
 colorscheme gruvbox     "colour scheme
-set guifont=Fira_Code:h10,Consolas:h10,Courier\ New:h10
+set guifont=Hack:h10,Fira_Code:h10,Consolas:h10,Courier\ New:h10
 "}}}
 
 " Spaces & Tabs {{{
