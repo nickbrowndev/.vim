@@ -19,10 +19,9 @@ On Windows:
 
     rmdir /s /q vimfiles
     del _vimrc
-    git clone git@github.com:nickbrowndev/vimrc.git
-    mklink /d vimfiles .vim
-    mklink /h _vimrc .vim\.vimrc
-    cd .vim
+    git clone git@github.com:nickbrowndev/vimrc.git %HOMEPATH%\vimfiles
+    mklink /h _vimrc vimfiles\.vimrc
+    cd vimfiles
     git submodule init
     git submodule update
 
